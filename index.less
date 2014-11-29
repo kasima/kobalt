@@ -1,14 +1,22 @@
+@editor-background-color: #002240;
+
 .editor, .editor .gutter {
-  background-color: #002240;
+  background-color: darken(@editor-background-color, 3%);
   color: #FFFFFF;
+}
+
+.editor.is-focused {
+  background-color: @editor-background-color;
 }
 
 .editor.is-focused .cursor {
   border-color: #FFFFFF;
+  // border-color: yellow;
+  // border-size: 2px
 }
 
 .editor.is-focused .selection .region {
-  background-color: rgba(179, 101, 57, 0.75);
+  background-color: rgba(255, 0, 0, 0.75);
 }
 
 .editor.is-focused .line-number.cursor-line-no-selection, .editor.is-focused .line.cursor-line {
@@ -169,6 +177,7 @@
   color: #F8F8F8;
   background-color: #000E1A;
 }
+
 
 .markup.deleted {
   color: #F8F8F8;
