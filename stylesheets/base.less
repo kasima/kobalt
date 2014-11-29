@@ -74,6 +74,12 @@
   border: 1px solid @syntax-result-marker-color-selected;
 }
 
+// copied from old kobalt theme
+.text .source, .string.unquoted.heredoc, .source .source {
+  color: #FFFFFF;
+  background-color: @dark-blue-gray;
+}
+
 .comment {
   font-style: italic;
   color: @light-blue;
@@ -91,37 +97,35 @@
     font-style: italic;
     color: @light-cyan;
   }
+
+  &.name.function {
+    color: @yellow
+  }
+
+  &.name.class, &.name.type.class {
+    color: @yellow;
+  }
+
+  // &.name.section {
+  //   color: @blue;
+  // }
+
+  // &.name.tag {
+  //   color: @red;
+  //   text-decoration: underline;
+  // }
+
+  &.other.attribute-name {
+    color: @yellow;
+
+    &.id {
+      color: @light-blue;
+    }
+  }
 }
 
-// .entity {
-//   &.name.function {
-//     color: @blue;
-//   }
-//
-//   &.name.class, &.name.type.class {
-//     color: @light-orange;
-//   }
-//
-//   &.name.section {
-//     color: @blue;
-//   }
-//
-//   &.name.tag {
-//     color: @red;
-//     text-decoration: underline;
-//   }
-//
-//   &.other.attribute-name {
-//     color: @orange;
-//
-//     &.id {
-//       color: @blue;
-//     }
-//   }
-// }
-
 .keyword {
-  color: @orange;
+  color: @dark-orange;
 
   &.control {
     color: @dark-orange;
@@ -195,7 +199,7 @@
 
     // is this used?
     .source.ruby.embedded {
-      color: @orange;
+      color: @yellow;
     }
   }
 
@@ -286,7 +290,7 @@
   }
 
   &.link {
-    color: @orange;
+    color: @yellow
   }
 
   &.require {
@@ -309,7 +313,7 @@
 
 .markup {
   &.bold {
-    color: @orange;
+    color: @yellow;
     font-style: bold;
   }
 
