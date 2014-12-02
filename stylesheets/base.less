@@ -1,7 +1,13 @@
 @import "syntax-variables";
 
-.active .editor, .active .gutter {
-  background-color: @base-blue !important;
+.active {
+  .editor {
+    background-color: @base-blue;
+
+    .gutter {
+      background-color: @base-blue;
+    }
+  }
 }
 
 .editor-colors {
@@ -14,7 +20,7 @@
   color: @syntax-text-color;
 
   &.is-focused {
-    .line.cursor-line {
+    .line.cursor-line, .line-number.cursor-line {
       background-color: @darker;
     }
   }
