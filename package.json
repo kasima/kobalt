@@ -1,7 +1,7 @@
 {
   "name": "kobalt",
   "theme": "syntax",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "Based on the Cobalt TextMate theme by Jacob Rus",
   "repository": "https://github.com/kasima/kobalt",
   "license": "MIT",
