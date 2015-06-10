@@ -1,7 +1,7 @@
 @import "syntax-variables";
 
 .active {
-  .editor {
+  atom-text-editor {
     background-color: @base-blue;
 
     .gutter {
@@ -10,16 +10,16 @@
   }
 }
 
-.editor-colors {
+atom-text-editor {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
 }
 
-.editor {
+atom-text-editor, atom-text-editor::shadow {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
 
-  &.is-focused {
+  .is-focused {
     .line.cursor-line, .line-number.cursor-line {
       background-color: @darker;
     }
@@ -79,12 +79,12 @@
   }
 }
 
-.editor .search-results .marker .region {
+atom-text-editor::shadow .search-results .marker .region {
   background-color: transparent;
   border: 1px solid @syntax-result-marker-color;
 }
 
-.editor .search-results .marker.current-result .region {
+atom-text-editor .search-results .marker.current-result .region {
   border: 1px solid @syntax-result-marker-color-selected;
 }
 
@@ -373,6 +373,7 @@
   }
 }
 
-.editor.mini .scroll-view {
+atom-text-editor[mini] .scroll-view,
+atom-text-editor::shadow[mini] .scroll-view {
   padding-left: 1px;
 }
