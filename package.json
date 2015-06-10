@@ -6,6 +6,6 @@
   "repository": "https://github.com/kasima/kobalt",
   "license": "MIT",
   "engines": {
-    "atom": ">=0.185.0 <2.0.0"
+    "atom": ">0.50.0"
   }
 }
