@@ -15,7 +15,7 @@ atom-text-editor {
   color: @syntax-text-color;
 }
 
-atom-text-editor, atom-text-editor::shadow {
+atom-text-editor, atom-text-editor.editor {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
 
@@ -79,7 +79,7 @@ atom-text-editor, atom-text-editor::shadow {
   }
 }
 
-atom-text-editor::shadow .search-results .marker .region {
+atom-text-editor.editor .search-results .marker .region {
   background-color: transparent;
   border: 1px solid @syntax-result-marker-color;
 }
@@ -374,6 +374,6 @@ atom-text-editor .search-results .marker.current-result .region {
 }
 
 atom-text-editor[mini] .scroll-view,
-atom-text-editor::shadow[mini] .scroll-view {
+atom-text-editor.editor[mini] .scroll-view {
   padding-left: 1px;
 }
